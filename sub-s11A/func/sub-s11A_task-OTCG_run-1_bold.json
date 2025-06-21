@@ -94,7 +94,7 @@
     "ConversionSoftware": "dcm2niix",
     "ConversionSoftwareVersion": "v1.0.20181125  GCC5.4.0",
     "DelayTime": 0,
-    "AcquisitionDuration": 2.0,
+    "SliceTiming": 2.0,
     "DelayAfterTrigger": 0,
     "GradientSetType": "default",
     "MRTransmitCoilSequence": "standard",
