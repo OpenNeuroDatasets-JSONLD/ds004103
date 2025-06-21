@@ -2,3 +2,4 @@
 *.mat
 sourcedata/
 *_bold.nii.gz
+..json
