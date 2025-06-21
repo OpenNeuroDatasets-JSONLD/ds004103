@@ -1,5 +1,3 @@
-**/*_events.tsv
 *.mat
 sourcedata/
-*_bold.nii.gz
-..json
+*
