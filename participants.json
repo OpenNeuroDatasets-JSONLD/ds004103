@@ -1,6 +1,13 @@
 {
     "participant_id": {
-        "Description": "Unique participant identifier matching BIDS folder name"
+        "Description": "Unique participant identifier matching BIDS folder name",
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:ParticipantID",
+                "Label": "Participant ID"
+            },
+            "VariableType": "Identifier"
+        }
     },
     "site": {
         "Description": "Site where participant was scanned",
@@ -14,10 +21,48 @@
         "Levels": {
             "M": "Male",
             "F": "Female"
+        },
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:Sex",
+                "Label": "Sex"
+            },
+            "VariableType": "Categorical",
+            "Levels": {
+                "F": {
+                    "TermURL": "snomed:248152002",
+                    "Label": "Female"
+                },
+                "M": {
+                    "TermURL": "snomed:248153007",
+                    "Label": "Male"
+                }
+            },
+            "MissingValues": []
         }
     },
     "age": {
         "Description": "Age of the participant at time of scan",
-        "Units": "years"
+        "Units": "years",
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:Age",
+                "Label": "Age"
+            },
+            "VariableType": "Continuous",
+            "Format": {
+                "TermURL": "nb:FromFloat",
+                "Label": "float"
+            },
+            "MissingValues": [
+                "n/a",
+                "N/A",
+                "na",
+                "NA",
+                "nan",
+                "NaN",
+                ""
+            ]
+        }
     }
 }
